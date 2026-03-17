@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="chem_bg_light">#E7F5F4</color>      <!-- общий светлый фон -->
+<!--    <color name="chem_key_bg">#C7E8E5</color>        &lt;!&ndash; цвет кнопок &ndash;&gt;-->
+<!--    <color name="chem_key_bg_dark">#A9D9D6</color>   &lt;!&ndash; цвет кнопки при нажатии &ndash;&gt;-->
+<!--    <color name="chem_key_text">#0D3B3A</color>      &lt;!&ndash; тёмно-зелёный текст &ndash;&gt;-->
+<!--    <color name="chem_border">#8DC5C0</color>        &lt;!&ndash; тонкая рамка &ndash;&gt;-->
+
+    <color name="dark_green">#2E7D32</color>
+    <color name="chem_key_bg">#FFFFFFFF</color>
+<!--    <color name="chem_key_bg">#DFF4F2</color>        &lt;!&ndash; светлый мятный &ndash;&gt;-->
+    <color name="chem_key_bg_dark">#C8EAE7</color>   <!-- тёмнее для нажатия -->
+    <color name="chem_border">#A9D5D1</color>        <!-- мягкая рамка -->
+    <color name="chem_key_text">#0D3B3A</color>      <!-- тот же глубокий зелёный -->
+
+    <!-- App bar и вкладки -->
+    <color name="app_bar_teal">#1A8A8A</color>       <!-- тёмный бирюзовый для шапки -->
+    <color name="tab_inactive_text">#1A8A8A</color>  <!-- текст неактивной вкладки -->
+    <color name="tab_active_text">#2D2D2D</color>    <!-- текст активной вкладки -->
+    <color name="tab_active_bg">#DFF4F2</color>      <!-- светло-зелёный фон активной вкладки -->
+</resources>

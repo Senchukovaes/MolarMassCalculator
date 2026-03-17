@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Цвет фона клавиатуры -->
+<!--    <solid android:color="#FFFFFF" />-->
+
+    <!-- Скругление больших уголков -->
+    <corners android:radius="60dp"/>
+
+    <!-- Отступы внутри блока клавиатуры -->
+<!--    <padding-->
+<!--        android:left="8dp"-->
+<!--        android:top="8dp"-->
+<!--        android:right="8dp"-->
+<!--        android:bottom="8dp"/>-->
+</shape>

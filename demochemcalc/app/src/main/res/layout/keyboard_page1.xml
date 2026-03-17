@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chemKeyboard1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <!-- Ряд 1 - цифры (10 кнопок) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <Button android:text="1" style="@style/ChemKeyNoMargin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:text="2" style="@style/ChemKeyNoMargin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:text="3" style="@style/ChemKeyNoMargin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:text="4" style="@style/ChemKeyNoMargin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:text="5" style="@style/ChemKeyNoMargin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:text="6" style="@style/ChemKeyNoMargin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:text="7" style="@style/ChemKeyNoMargin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:text="8" style="@style/ChemKeyNoMargin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:text="9" style="@style/ChemKeyNoMargin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:text="0" style="@style/ChemKeyNoMargin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <!-- Ряд 2 - химические элементы и круглые скобки (5 кнопок) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <Button android:text="H" style="@style/ChemKeyNoMargin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:text="C" style="@style/ChemKeyNoMargin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:text="O" style="@style/ChemKeyNoMargin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:text="(" style="@style/ChemKeyNoMargin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:text=")" style="@style/ChemKeyNoMargin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <!-- Ряд 3 - химические элементы и квадратные скобки (5 кнопок) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <Button android:text="N" style="@style/ChemKeyNoMargin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:text="S" style="@style/ChemKeyNoMargin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:text="P" style="@style/ChemKeyNoMargin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:text="[" style="@style/ChemKeyNoMargin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:text="]" style="@style/ChemKeyNoMargin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <!-- Ряд 4 - химические элементы и служебные элементы(5 кнопок) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <Button android:text="F" style="@style/ChemKeyNoMargin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:text="Cl" style="@style/ChemKeyNoMargin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:text="Br" style="@style/ChemKeyNoMargin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:text="." style="@style/ChemKeyNoMargin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+<!--        <Button android:text="Del" style="@style/ChemKeyNoMargin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>-->
+        <Button
+            android:id="@+id/deleteBtn"
+            style="@style/ChemKeyNoMargin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="⌫"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <!-- Ряд 5 - химические элементы и служебные кнопки (5 кнопок) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <Button android:text="I" style="@style/ChemKeyNoMargin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:text="Na" style="@style/ChemKeyNoMargin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:text="K" style="@style/ChemKeyNoMargin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:text="*" style="@style/ChemKeyNoMargin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button
+            android:text="→"
+            android:id="@+id/nextPageBtn"
+            style="@style/ChemKeyNoMargin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    
+
+</LinearLayout>

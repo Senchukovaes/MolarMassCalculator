@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/chem_bg_light">
+
+    <!-- Верхняя панель приложения: иконка + Chemilator -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/app_bar_bg"
+        android:paddingVertical="14dp"
+        android:paddingHorizontal="16dp">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_toolbar_flask"
+            android:contentDescription="@null"
+            android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chemilator"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingHorizontal="12dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="20dp">
+
+            <!-- Верхняя панель с кнопками режимов -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/mode_panel_bg"
+                android:paddingVertical="6dp"
+                android:paddingHorizontal="14dp"
+                android:layout_marginHorizontal="4dp"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/calcButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Молярная масса"
+                    android:drawableStart="@drawable/ic_tab_calculator_selector"
+                    android:drawablePadding="6dp"
+                    style="@style/ModeTabButton" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="1dp" />
+                <Button
+                    android:id="@+id/flaskButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Смешивание"
+                    android:drawableStart="@drawable/ic_tab_flask_selector"
+                    android:drawablePadding="6dp"
+                    style="@style/ModeTabButton" />
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="1dp" />
+
+                <Button
+                    android:id="@+id/dropButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Плотность"
+                    android:drawableStart="@drawable/ic_tab_drop_selector"
+                    android:drawablePadding="6dp"
+                    style="@style/ModeTabButton" />
+
+            </LinearLayout>
+
+            <!-- Карточка ввода -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/card_bg"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:layout_marginHorizontal="4dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Введите химическую формулу"
+                    android:textSize="16sp"
+                    android:textColor="@color/chem_key_text"
+                    android:layout_marginBottom="10dp" />
+
+                <EditText
+                    android:id="@+id/formulaInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edit_bg"
+                    android:hint="например: H2O, Ca(OH)2, C6H12O6"
+                    android:padding="12dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/chem_key_text"
+                    android:textColorHint="#7FA7A5"
+                    android:layout_marginBottom="14dp" />
+
+                <!-- Кнопки расчёта -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <Button
+                        android:id="@+id/calculateButton"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="3"
+                        android:text="Рассчитать"
+                        android:textSize="16sp"
+                        android:drawableStart="@drawable/ic_calculator_white"
+                        android:drawablePadding="6dp"
+                        style="@style/MainButton" />
+
+                    <Space
+                        android:layout_width="8dp"
+                        android:layout_height="1dp" />
+
+                    <Button
+                        android:id="@+id/clearButton"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:drawableLeft="@drawable/ic_delete_teal"
+                        style="@style/ClearButton" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Блок результата -->
+            <TextView
+                android:id="@+id/resultText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Результат будет тут"
+                android:textSize="18sp"
+                android:textColor="@color/chem_key_text"
+                android:layout_marginBottom="16dp"
+                android:padding="20dp"
+                android:background="@drawable/result_bg"
+                android:gravity="center" />
+
+            <!-- Контейнер клавиатуры -->
+            <FrameLayout
+                android:id="@+id/keyboardContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/keyboard_background"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
